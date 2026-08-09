@@ -607,3 +607,20 @@ header {
         display: none;
     }
 }
+/* MAKE LIVE SITE SAME AS VS CODE */
+
+.hero {
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    gap: 40px;
+}
+
+.hero-content {
+    width: 100%;
+    max-width: 100%;
+}
+
+.hero-shape {
+    display: none;
+}
