@@ -644,3 +644,25 @@ header {
     object-fit: contain !important;
     display: block !important;
 }
+/* PORTFOLIO - ONE CARD PER ROW */
+
+.portfolio-grid {
+    display: flex !important;
+    flex-direction: column !important;
+    gap: 35px !important;
+    width: 100% !important;
+}
+
+.portfolio-card {
+    width: 100% !important;
+    max-width: 1200px !important;
+    margin: 0 auto !important;
+    box-sizing: border-box !important;
+}
+
+.portfolio-card img {
+    display: block !important;
+    width: 100% !important;
+    height: 350px !important;
+    object-fit: contain !important;
+}
