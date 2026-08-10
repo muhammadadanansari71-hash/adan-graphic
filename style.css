@@ -624,3 +624,23 @@ header {
 .hero-shape {
     display: none;
 }
+/* PORTFOLIO - VERTICAL COLUMNS */
+
+.portfolio-grid {
+    display: flex !important;
+    flex-direction: column !important;
+    gap: 35px !important;
+    width: 100% !important;
+}
+
+.portfolio-card {
+    width: 100% !important;
+    max-width: 100% !important;
+}
+
+.portfolio-card img {
+    width: 100% !important;
+    height: 280px !important;
+    object-fit: contain !important;
+    display: block !important;
+}
