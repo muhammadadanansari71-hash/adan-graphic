@@ -666,3 +666,65 @@ header {
     height: 350px !important;
     object-fit: contain !important;
 }
+/* PREMIUM BACKGROUND GLOW */
+
+body {
+    position: relative;
+    background: #090909;
+}
+
+body::before {
+    content: "";
+    position: fixed;
+    width: 500px;
+    height: 500px;
+    top: 10%;
+    left: -150px;
+    background: radial-gradient(
+        circle,
+        rgba(201, 169, 110, 0.14) 0%,
+        rgba(201, 169, 110, 0.05) 35%,
+        transparent 70%
+    );
+    filter: blur(20px);
+    pointer-events: none;
+    z-index: -1;
+    animation: goldenGlow 8s ease-in-out infinite alternate;
+}
+
+body::after {
+    content: "";
+    position: fixed;
+    width: 450px;
+    height: 450px;
+    right: -150px;
+    bottom: 5%;
+    background: radial-gradient(
+        circle,
+        rgba(201, 169, 110, 0.12) 0%,
+        rgba(201, 169, 110, 0.04) 35%,
+        transparent 70%
+    );
+    filter: blur(25px);
+    pointer-events: none;
+    z-index: -1;
+    animation: goldenGlow2 10s ease-in-out infinite alternate;
+}
+
+@keyframes goldenGlow {
+    from {
+        transform: translate(0, 0);
+    }
+    to {
+        transform: translate(180px, 120px);
+    }
+}
+
+@keyframes goldenGlow2 {
+    from {
+        transform: translate(0, 0);
+    }
+    to {
+        transform: translate(-160px, -100px);
+    }
+}
